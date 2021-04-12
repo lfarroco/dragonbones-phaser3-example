@@ -1,0 +1,486 @@
+{
+    "frameRate": 24,
+    "name": "manachara",
+    "version": "5.5",
+    "compatibleVersion": "5.5",
+    "armature": [
+        {
+            "type": "Armature",
+            "frameRate": 24,
+            "name": "armature_name",
+            "aabb": {
+                "x": -46.29,
+                "y": -154.39,
+                "width": 79.82,
+                "height": 155.82
+            },
+            "bone": [
+                {
+                    "name": "root",
+                    "transform": {
+                        "x": -1.8106,
+                        "y": 0.9967,
+                        "scX": 0.9711,
+                        "scY": 0.9711
+                    }
+                },
+                {
+                    "name": "bone",
+                    "parent": "root",
+                    "transform": {
+                        "x": 0.6671,
+                        "y": -41.052
+                    }
+                },
+                {
+                    "name": "leg1",
+                    "parent": "bone",
+                    "transform": {
+                        "x": -13.7011
+                    }
+                },
+                {
+                    "name": "leg2",
+                    "parent": "bone",
+                    "transform": {
+                        "x": 13.3248
+                    }
+                },
+                {
+                    "name": "chest",
+                    "parent": "bone",
+                    "transform": {
+                        "y": -33.1666
+                    }
+                },
+                {
+                    "name": "shoulder_1",
+                    "parent": "chest",
+                    "transform": {
+                        "x": -18.8326
+                    }
+                },
+                {
+                    "name": "bone4",
+                    "parent": "leg2",
+                    "transform": {
+                        "x": 1.7049,
+                        "y": 18.5352
+                    }
+                },
+                {
+                    "name": "bone3",
+                    "parent": "leg1",
+                    "transform": {
+                        "x": -1.857,
+                        "y": 26.0167
+                    }
+                },
+                {
+                    "name": "shoulder_2",
+                    "parent": "chest",
+                    "transform": {
+                        "x": 15.5826,
+                        "y": -5.1315
+                    }
+                },
+                {
+                    "name": "head",
+                    "parent": "chest",
+                    "transform": {
+                        "x": -1.2986,
+                        "y": -19.6274
+                    }
+                },
+                {
+                    "name": "bone5",
+                    "parent": "shoulder_1",
+                    "transform": {
+                        "x": -8.5525,
+                        "y": 19.1576
+                    }
+                },
+                {
+                    "name": "bone6",
+                    "parent": "shoulder_2",
+                    "transform": {
+                        "x": 9.4077,
+                        "y": 19.8418
+                    }
+                }
+            ],
+            "slot": [
+                {
+                    "name": "hand1",
+                    "parent": "bone6"
+                },
+                {
+                    "name": "foot1",
+                    "parent": "bone4"
+                },
+                {
+                    "name": "foot",
+                    "parent": "bone3"
+                },
+                {
+                    "name": "trunk_fighter",
+                    "parent": "chest"
+                },
+                {
+                    "name": "hand",
+                    "parent": "bone5"
+                },
+                {
+                    "name": "head1",
+                    "parent": "head"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "trunk_fighter",
+                            "display": [
+                                {
+                                    "name": "trunk_fighter",
+                                    "transform": {
+                                        "x": -7.64,
+                                        "y": 20.43,
+                                        "skX": -0.07,
+                                        "skY": -0.07
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "hand",
+                            "display": [
+                                {
+                                    "name": "hand",
+                                    "transform": {
+                                        "x": 2.55,
+                                        "y": 0.26,
+                                        "skX": -0.07,
+                                        "skY": -0.07
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "head1",
+                            "display": [
+                                {
+                                    "name": "head",
+                                    "transform": {
+                                        "x": -8.23,
+                                        "y": -26.98,
+                                        "skX": -0.07,
+                                        "skY": -0.07
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "hand1",
+                            "display": [
+                                {
+                                    "name": "hand",
+                                    "transform": {
+                                        "x": -3.22,
+                                        "y": -1.03,
+                                        "skX": -0.07,
+                                        "skY": -0.07
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "foot1",
+                            "display": [
+                                {
+                                    "name": "foot",
+                                    "transform": {
+                                        "x": 3.78,
+                                        "y": 2.56,
+                                        "skX": -0.07,
+                                        "skY": -0.07
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "foot",
+                            "display": [
+                                {
+                                    "name": "foot",
+                                    "transform": {
+                                        "x": 0.61,
+                                        "y": 0.93,
+                                        "skX": -0.07,
+                                        "skY": -0.07
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 49,
+                    "playTimes": 0,
+                    "name": "walk",
+                    "bone": [
+                        {
+                            "name": "root",
+                            "translateFrame": [
+                                {
+                                    "duration": 5,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 4,
+                                    "tweenEasing": 0,
+                                    "x": -0.25,
+                                    "y": -3.54
+                                },
+                                {
+                                    "duration": 5,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 4,
+                                    "tweenEasing": 0,
+                                    "x": -0.25,
+                                    "y": -3.54
+                                },
+                                {
+                                    "duration": 5,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 3,
+                                    "tweenEasing": 0,
+                                    "x": -0.25,
+                                    "y": -3.54
+                                },
+                                {
+                                    "duration": 5,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 3,
+                                    "tweenEasing": 0,
+                                    "x": -0.25,
+                                    "y": -3.54
+                                },
+                                {
+                                    "duration": 5,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 5,
+                                    "tweenEasing": 0,
+                                    "x": -0.25,
+                                    "y": -3.54
+                                },
+                                {
+                                    "duration": 5,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 0,
+                                    "x": -0.25,
+                                    "y": -3.54
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bone3",
+                            "translateFrame": [
+                                {
+                                    "duration": 8,
+                                    "curve": [
+                                        0.5,
+                                        0,
+                                        1,
+                                        1
+                                    ],
+                                    "x": -1.88,
+                                    "y": -1.2
+                                },
+                                {
+                                    "duration": 12,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "x": -15.39,
+                                    "y": -8.74
+                                },
+                                {
+                                    "duration": 15,
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.5,
+                                        1
+                                    ],
+                                    "x": 9.58,
+                                    "y": 2.22
+                                },
+                                {
+                                    "duration": 13,
+                                    "tweenEasing": 0,
+                                    "x": 17.52,
+                                    "y": 2.22
+                                },
+                                {
+                                    "x": 9.58,
+                                    "y": 2.22
+                                }
+                            ],
+                            "rotateFrame": [
+                                {
+                                    "duration": 8,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 12,
+                                    "tweenEasing": 0,
+                                    "rotate": 38.71
+                                },
+                                {
+                                    "duration": 15,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 13,
+                                    "tweenEasing": 0,
+                                    "rotate": -41.46
+                                },
+                                {}
+                            ]
+                        },
+                        {
+                            "name": "bone4",
+                            "translateFrame": [
+                                {
+                                    "duration": 8,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 12,
+                                    "tweenEasing": 0,
+                                    "x": 13.18,
+                                    "y": -5.97
+                                },
+                                {
+                                    "duration": 15,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 14,
+                                    "tweenEasing": 0,
+                                    "x": -28.07
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ],
+                            "rotateFrame": [
+                                {
+                                    "duration": 8,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 12,
+                                    "tweenEasing": 0,
+                                    "rotate": -50.94
+                                },
+                                {
+                                    "duration": 15,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 14,
+                                    "tweenEasing": 0,
+                                    "rotate": 17.18
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bone5",
+                            "translateFrame": [
+                                {
+                                    "duration": 9,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 11,
+                                    "tweenEasing": 0,
+                                    "x": 9.1,
+                                    "y": 3.64
+                                },
+                                {
+                                    "duration": 16,
+                                    "tweenEasing": 0,
+                                    "x": -4.42,
+                                    "y": 4.94
+                                },
+                                {
+                                    "duration": 13,
+                                    "tweenEasing": 0,
+                                    "x": -13,
+                                    "y": 0.78
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bone6",
+                            "translateFrame": [
+                                {
+                                    "duration": 10,
+                                    "tweenEasing": 0,
+                                    "y": -0.26
+                                },
+                                {
+                                    "duration": 9,
+                                    "tweenEasing": 0,
+                                    "x": -12.49,
+                                    "y": -2.04
+                                },
+                                {
+                                    "duration": 12,
+                                    "tweenEasing": 0
+                                },
+                                {
+                                    "duration": 18,
+                                    "tweenEasing": 0,
+                                    "x": 8.32,
+                                    "y": 3.9
+                                },
+                                {
+                                    "duration": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "walk"
+                }
+            ]
+        }
+    ]
+}
