@@ -21,9 +21,9 @@ const game = new Phaser.Game(config);
 
 function preload() {
 
-  // We need to use the name of armature set on dragonbones (the `root` parent)
+  // We need to use the name of armature set on dragonbones (the `root`'s parent)
   this.load.dragonbone(
-      "armature_name",
+      "manachara_armature",
       "src/assets/mana/manachara_tex.png",
       "src/assets/mana/manachara_tex.json",
       "src/assets/mana/manachara_ske.json",
@@ -32,15 +32,18 @@ function preload() {
 
 function create() {
 
-  const arm = this.add.armature("armature_name", "armature_name");
+  const arm = this.add.armature("manachara_armature", "manachara_armature");
 
-  window.armature = arm
   arm.x = 400;
   arm.y = 300;
   arm.animation.play("walk");
 
+  // play with armature in the console
+  window.armature = arm
+
   // we can access body parts with
   // armature.list[2]
+  // and do some operations with it:
   // armature.list[2].frame.name === "foot"
   // armature.list[2].setTexture("manachara","head")
   // armature.list[2].setTint("0xff33ff")

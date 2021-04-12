@@ -1,5 +1,11 @@
 # Introduction
+
+This repo is based on the work of https://github.com/RaheelYawar/phaser3-webpack-dragonbones.
+
 A very simple example of using DragonBones with Phaser 3 while using Webpack and ES6.
+
+Includes a Bragonbones project and some explanations on how to access armature slots and
+how the naming should be performed when importing the armature.
 
 Note: This is a fork of the phaser3-project-template repository.
 ## Phaser 3 Webpack Project Template
